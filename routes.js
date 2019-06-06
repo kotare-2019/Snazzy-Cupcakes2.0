@@ -6,39 +6,39 @@ const fs = require("fs")
 const server = express();
 
 router.get('/', (req, res) => {
-    res.render('puppies/index', data)
+    res.render('cupcakes/index', data)
 })
 
-router.get('/puppies', (req, res) => {
-    res.render('puppies/index', data)
+router.get('/cupcakes', (req, res) => {
+    res.render('cupcakes/index', data)
 })
 
-router.get('/puppies/:id', (req, res) => {
-    const puppyArray = data.puppies.find(item => {
+router.get('/cupcakes/:id', (req, res) => {
+    const cupcakeArray = data.cupcakes.find(item => {
         return item.id == req.params.id;
     });
-    res.render("puppies/view", puppyArray);
+    res.render("cupcakes/view", cupcakeArray);
 });
 
-router.get('/puppies/edit/:id', (req, res) => {
-    const puppyArray = data.puppies.find(item => {
+router.get('/cupcakes/edit/:id', (req, res) => {
+    const cupcakeArray = data.cupcakes.find(item => {
         return item.id == req.params.id;
     });
-    res.render("puppies/edit", puppyArray);
+    res.render("cupcakes/edit", cupcakeArray);
 });
 
-router.post('/puppies/edit/:id', (req, res) => {
-    let updatedPuppy = req.body;
-    updatedPuppy.id = req.params.id
-    let puppyArr = data.puppies.map(pupper => {
-        if(pupper.id == req.params.id) {
-            return updatedPuppy
+router.post('/cupcakes/edit/:id', (req, res) => {
+    let updatedCupcakes = req.body;
+    updatedCupcakes.id = req.params.id
+    let cupcakeArr = data.cupcakes.map(cupper => {
+        if(cupper.id == req.params.id) {
+            return updatedCupcakes
         } else {
-            return pupper
+            return cupper
         }
     });
 
-    data.puppies = puppyArr
+    data.cupcakes = cupcakeArr
 
     fs.writeFile(
         "./data.json",
@@ -46,8 +46,8 @@ router.post('/puppies/edit/:id', (req, res) => {
         "utf8",
         err => {
             if (err) throw err;
-            console.log("The puppies have been updated");
-            res.redirect("/puppies/");
+            console.log("The cupcakes have been updated");
+            res.redirect("/cupcakes/");
         }
     );
 })

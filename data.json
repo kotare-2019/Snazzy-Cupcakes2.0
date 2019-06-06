@@ -1,16 +1,16 @@
 {
-  "puppies": [
+  "cupcakes": [
     {
-      "id": "1",
-      "name": "Dark Chocolate",     
-      "owner": "Quentin",
-      "image": "/images/cupcake1.jpg"
+      "name": "Very Dark Chocolate",
+      "owner": "Dan",
+      "image": "/images/cupcake1.jpg",
+      "id": "1"
     },
     {
-      "id": "2",
       "name": "Very Vanilla",
-      "owner": "Dan",
-      "image": "/images/cupcake2.jpg"
+      "owner": "Serenade",
+      "image": "/images/cupcake2.jpg",
+      "id": "2"
     },
     {
       "id": 3,
