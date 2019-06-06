@@ -1,0 +1,48 @@
+{
+  "puppies": [
+    {
+      "id": "1",
+      "name": "Dark Chocolate",     
+      "owner": "Quentin",
+      "image": "/images/cupcake1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Very Vanilla",
+      "owner": "Dan",
+      "image": "/images/cupcake2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ruby Red Velvet",
+      "owner": "Serenade",
+      "image": "/images/cupcake3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Lush Lemon",
+      "owner": "ollie",
+      "image": "/images/cupcake4.jpg",
+      "_locals": {}
+    },
+    {
+      "id": 5,
+      "name": "Bountiful Berries",
+      "owner": "kelly",
+      "image": "/images/cupcake5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Sensual Salted Caramal",
+      "owner": "Collen",
+      "image": "/images/cupcake6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Lavender Honey",
+      "owner": "Ross",
+      "image": "/images/cupcake7.jpeg"
+    }
+  ],
+  "_locals": {}
+}
