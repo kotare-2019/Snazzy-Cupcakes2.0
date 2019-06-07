@@ -1,5 +1,5 @@
 body {
-  background-color: #d9ccff;
+  background-image: url('https://www.xmple.com/wallpaper/white-pink-linear-gradient-2048x1152-c2-db7093-ffffff-a-270-f-14.svg');
   font-family: 'Carter One', cursive;
 }
 
@@ -37,11 +37,14 @@ body {
 
 .title {
   text-align: center;
+  font-size: 50px;
 }
 
 .nav {
   text-align: center;
   color: black;
+  text-decoration: none;
+  font-size: 25px;
 }
 
 .form {
@@ -49,4 +52,9 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
 }
